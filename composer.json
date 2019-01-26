@@ -1,0 +1,19 @@
+{
+    "name": "ImbaSynergy/CppComet",
+    "type": "october-plugin",
+    "description": "Plugin for using CppComet API in October CMS",
+    "homepage": "https://github.com/CppComet/OctoberCMS-CppComet",
+    "keywords": ["october", "octobercms", "CppComet", "Comet", "Websockets"],
+    "license": "Apache License 2.0",
+    "authors": [
+        {
+            "name": "Trapenok Victor",
+            "email": "Levhav@gmail.com",
+            "role": "Co-founder"
+        }
+    ],
+    "require": {
+        "php": ">=5.0"
+    },
+    "minimum-stability": "dev"
+}
