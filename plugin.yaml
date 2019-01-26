@@ -1,0 +1,6 @@
+plugin:
+    name: 'imbasynergy.cppcomet::lang.plugin.name'
+    description: 'imbasynergy.cppcomet::lang.plugin.description'
+    author: 'IMBA Synergy'
+    icon: oc-icon-cloud-download
+    homepage: ''
