@@ -2,6 +2,7 @@
 
 use Backend\Classes\Controller;
 use BackendMenu;
+use ImbaSynergy\Cppcomet\Models\Settings;
 
 class CppComet extends Controller
 {
@@ -22,14 +23,13 @@ class CppComet extends Controller
             'prefix'    => '',
             */
         $this->conf = [
-            "user" => "15",
-            "password" => "lPXBFPqNg3f661JcegBY0N0dPXqUBdHXqj2cHf04PZgLHxT6z55e20ozojvMRvB8",
-            "host" => "app.comet-server.ru",
-            "db" => "CometQL_v1",
-            "port" => "3306",
+            "user" => Settings::get('user', '15'),
+            "password" => Settings::get('password', 'lPXBFPqNg3f661JcegBY0N0dPXqUBdHXqj2cHf04PZgLHxT6z55e20ozojvMRvB8'),
+            "host" => Settings::get('host', "app.comet-server.ru"),
+            "db" => Settings::get('db', "CometQL_v1"),
+            "port" => Settings::get('port', 3306),
         ];
-
-
+ 
         $this->db_link = new \PDO('mysql:host='.$this->conf['host'].":".$this->conf['port'].';dbname='.$this->conf['db'], $this->conf['user'], $this->conf['password']);
 
         //$this->db_link = \Db::connection('cppcomet');
